@@ -27,19 +27,19 @@
 			<input type="text" id="username" name="username" placeholder="Username" required>
 			</p>
 			<p>
-			<label for="firstName">firstName</label>
+			<label for="firstName">First Name</label>
 			<input type="text" id="firstName" name="firstName" placeholder="firstName" required>
 			</p>
 			<p>
-			<label for="lastName">lastName</label>
+			<label for="lastName">Last Name</label>
 			<input type="text" id="lastName" name="lastName" placeholder="lastName" required>
 			</p>
 			<p>
-			<label for="email">email</label>
+			<label for="email">Email</label>
 			<input type="email" id="email" name="email" placeholder="email" required>
 			</p>
 			<p>
-			<label for="emailConform">emailConform</label>
+			<label for="emailConform">Conform Email</label>
 			<input type="email" id="emailConform" name="emailConform" placeholder="emailConform" required>
 			</p>
 			<p>
@@ -47,7 +47,7 @@
 			<input type="password" id="password" name="password" placeholder="Password" required>
 			</p>
 			<p>
-			<label for="passwordConform">Password</label>
+			<label for="passwordConform">Conform Password</label>
 			<input type="password" id="passwordConform" name="passwordConform" placeholder="passwordConform" required>
 			</p>
 			<button type="submit" name="loginButton">Login</button>
