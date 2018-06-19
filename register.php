@@ -1,52 +1,11 @@
-<?php
-
-function sanitizeFormUsername($inputText){
-	$inputText = strip_tags($inputText);
-	$inputText = str_replace(" ","", $inputText); //replace space with empty string
-	return $inputText;
-}
-
-function sanitizeFormString($inputText){
-	$firstName = strip_tags($firstName); 
-	$firstName = str_replace(" ","", $firstName);
-	$firstName = ucfirst(strtolower($firstName))
-	return $inputText;
-}
-
-function sanitizeFormPassword($inputText){
-	$firstName = strip_tags($firstName); 
-	return $inputText;
-}
-
-
-if(isset($_POST['loginButton'])){
-
-
-	
-}
-
-if(isset($_POST['registerButton'])){
-	$username  = sanitizeFormUsername($_POST['username']);
-	$firstName  = sanitizeFormString($_POST['firstName']);
-	$lastName  = sanitizeFormString($_POST['lastName']);
-	$email  = sanitizeFormString($_POST['email']);
-	$emailConfirm  = sanitizeFormString($_POST['emailConfirm']);
-	$password  = sanitizeFornPassword($_POST['password']);
-	$passwordConfirm  = sanitizeFornPassword($_POST['passwordConfirm']);
-	
-
-
-	
-} 
-
+<?php 
+include("includes/handlers/register-handler.php");
 ?>
 
 <html>
-
 <head>
 	<title>Another Music Streaming</title>
 </head>
-
 <body>
 
 	<div id="inputContainer">
@@ -99,6 +58,7 @@ if(isset($_POST['registerButton'])){
 		</form> 
 	</div>
 
-</body>
 
+
+</body>
 </html>
