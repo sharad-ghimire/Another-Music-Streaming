@@ -32,14 +32,17 @@
 		<form action="register.php" id="registerForm" method="POST">
 			<h2>Create your free account</h2>
 			<p>
+				<?php echo $account->getError("Username must be between 5 and 25")  ?>
 				<label for="username">Username</label>
 				<input type="text" id="username" name="username" placeholder="Username" required>
 			</p>
 			<p>
+				<?php echo $account->getError("First Name must be between 5 and 25")  ?>
 				<label for="firstName">First Name</label>
 				<input type="text" id="firstName" name="firstName" placeholder="firstName" required>
 			</p>
 			<p>
+				<?php echo $account->getError("Last Name must be between 5 and 25")  ?>	
 				<label for="lastName">Last Name</label>
 				<input type="text" id="lastName" name="lastName" placeholder="lastName" required>
 			</p>

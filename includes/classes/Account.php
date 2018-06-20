@@ -14,6 +14,22 @@ class Account{
         $this->validateLastName($ln);
         $this->validateEmails($em, $em2);
         $this->validatePasswords($pw, $pw2);
+
+        if(empty($this->errorArray) == true){
+            //Insert in db
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getError($err) {
+        if(!in_array($err, $this->errorArray)){
+            $err = "";
+        } else {
+            return "<span class='errorMessage'>$error</span";
+        }
+
     }
 
     private function validateUsername($user) {
