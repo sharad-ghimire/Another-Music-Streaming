@@ -4,8 +4,7 @@ class Account{
 
     public function __construct() {
         $this->errorArray = array();
-
-
+        
     }
 
     public function register($un, $fn, $ln, $em, $em2, $pw, $pw2 ) {        	
@@ -84,16 +83,6 @@ class Account{
             return;
         }
         
-    }
+    } 
 
-
-
-}
-
-
-
-
-
-
-
-?>
+}?>
